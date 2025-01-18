@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(190deg, rgb(233, 63, 252), rgb(118, 1, 131));
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.bloco_central{
+    margin: 50px 750px;
+    padding: 50px 90px;
+    background-color: #DCCCFF ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 40px;
+}
+
+h2, h3{
+    margin: 10px 0;
+    color: #420039;
+    text-align: center;
+}
+
+.submain-texts{
+    background-color: #420039;
+    color: aliceblue;
+    padding: 8px 5px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+img{
+    width: 300px;
+    margin: 10px;
+    border-radius: 40px;
+    box-shadow: 3px 10px 10px black;
+    margin-top: 20px;
+
+}
+
+span{
+    font-weight: bold;
+}
+
+p{
+    text-align: center;
+    color: #932F6D;
+    margin: 8px 0;
+}
+
+ul{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    font-size: large;
+    font-weight: bold;
+    margin: 6px 0;
+    padding: 10px;
+    color: #420039;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.list_livros_pendentes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input, .dropdown_content{
+    display: none;
+}
+
+label{
+    position: relative;
+    display: block;
+    cursor: pointer;
+    background-color: aliceblue;
+    color: #932F6D;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+input:checked~.dropdown_content{
+    display: block;
+}
+
+.list_livros_lidos p{
+    font-size: large;
+    color: black;
+}
+
+.descricao_club{
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px){
+    /*edição com responsividade*/
+
+    .bloco_central{
+        margin: 20px;
+        padding: 30px;
+    }
+
+    .imagem_central{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagem_central img{
+        width: 100%;
+        height: auto;
+    }
+
+    .list_livros_pendentes, .list_livros_lidos{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,78 @@
+<!--
+
+                            MISSÃO:
+
+    Deixar a página responsiva, finalizar os ajustes finais e completar com os livros
+    Pesquisar mais efeitos legais de css e nas bibliotecas no notion
+    Migrar o site para a vercel e para o github como template
+    Adicionar o site para um QR Code
+
+    ideia: seruia interessante, ao aparecer o dropdown, adicionar um bloco onde a pessoa consegue
+    rolar pela lista de livros pendentes porém sem rolar a página em sim, como se abrisse
+    uma janela quando embutada no proprio site
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Clube do Livro</title>
+
+    <link rel="shortcut icon" href="./media/img/bookcouple-favicon.png" sizes="16x16 32x32 64x64 196x196" type="image/x-icon">
+    <!--Aprende como redimensionar tamanho do favicon-->
+    <link rel="stylesheet" href="./style/proj002_bookclubcouple(simples).css">
+</head>
+<body>
+    
+    <div class="bloco_central">
+        <h2>
+           📚 Nosso Clube do Livro 📚<!--Aqui posso colocar um emoji-->
+        </h2>
+
+        <div class="imagem_central">
+            <img src="./media/img/foto_juntos_bookclub.jpg" alt="" id="foto_juntos">
+        </div>
+
+        <h3 class="submain-texts">
+            ⌛Livros Pendentes⤵
+        </h3>
+
+        <div class="list_livros_pendentes">
+           <input type="checkbox" name="check01" id="check01"> 
+           <label for="check01"><h3><span> 🔽📚 Flores para Algernon</span> por Daniel Keyes</h3></label>
+            <ul class="dropdown_content">
+                <li>Mais um livro</li>
+                <li>Mais um livro</li>
+                <li>Mais um livro</li>
+                <li>Mais um livro</li>
+            </ul>
+        
+        <h3 class="submain-texts">
+            ✅Livros já lidos:⤵
+        </h3>
+
+        <div class="list_livros_lidos">
+
+            <p>⚠️ Ainda não temos livros já lidos ⚠️ </p>
+            <!--Fazer a mesma estrutura de dropdown para os livros já lidos
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            -->
+        </div>
+
+        <h3>
+            Sobre Nosso Clube do Livro
+        </h3>
+
+        <p class="descricao_club">Clube do Livro Particular: Murilo & Thainá. 📚💛
+            Que esta jornada literária nos traga mais amor, conhecimento e boas conversas! </p>
+    </div>
+    
+</body>
+</html>
